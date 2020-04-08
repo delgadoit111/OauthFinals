@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oauth Activity By Jhon Delgado</title>
+</head>
+<body>
+    
+    <% if(user) { %>
+        <a href="/auth/logout">Logout</a>    
+        <br>
+        <% } else { %>
+        <a href="/auth/login">Login</a>
+        <br>
+        <% } %>
+        <a href="/">Homepage</a>
+        <br>
+        <a href="/profile">Profile</a>
+        <br>
+        <hr>
+
+    <h1>Welcome to your profile, <%= user._name %> </h1>    
+    <p>
+      extra information about you
+      <img src="<%=user._picture%>" alt="dd.jpg">
+        <!DOCTYPE html>
+        <html>
+          <head>
+            <meta charset="utf-8">
+            <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+            <link rel="stylesheet" href="style.css">
+            <title>Personal WebSite</title>
+          </head>
+          <body>
+        <div class="box">
+          <img src="dd.jpg" alt="" class="box-img">
+          <h1>
+        Jhon Kristoffer U Delgado</h1>
+        <h5>
+        CSS - 2nd Year College</h5>
+        <p>
+        A student who is trying it's best to learn from his mistakes and uses the knowledge he gains from the discussion.</p>
+        <ul>
+        <li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+        </ul>
+        </div>
+        </body>
+        </html>
+        
+        
+    </p>
+
+</body>
+</html>
+<style>
+  body{
+  margin: 0;
+  padding: 0;
+  background: url(bg.jpg) no-repeat;
+  background-size: cover;
+}
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: black;
+  font-family: 'Century Gothic',sans-serif;
+}
+.box-img{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+.box h1{
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 100;
+}
+.box h5{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+.box p{
+  text-align: justify;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
+.box li{
+  display: inline-block;
+  margin: 6px;
+  list-style: none;
+}
+.box li a{
+  color: green;
+  text-decoration: none;
+  font-size: 60px;
+  transition: all ease-in-out 250ms;
+}
+.box li a:hover{
+  color: #b9b9b9;
+}
+
+</style>

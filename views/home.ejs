@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oauth Activity By Jhon Delgado</title>
+</head>
+<body>
+    
+    <% if(user) { %>
+    <a href="/auth/logout">Logout</a>    
+    <br>
+    <% } else { %>
+    <a href="/auth/login">Login</a>
+    <br>
+    <% } %>
+    <a href="/">Homepage</a>
+    <ul id="mainNav">
+        <li class="active"><a href="#home">Home</a></li>
+        <li><a href="#auth/login">Work</a></li>
+        <li><a href="#auth/logout">About</a></li>
+        <li><a href="#profile">Contact</a></li>    
+      </ul>
+    </nav>
+    <section id="home"><h2>Home</h2></section>
+    <section id="auth/login" data-sr><h2>Work</h2></section>
+    <section id="auth/logout"><h2>About</h2></section>
+    <section id="profile"><h2>Contact</h2></section>
+    <br>
+    <a href="/profile">Profile</a>
+    <br>
+    <hr>
+
+</body>
+</html>
+
+
